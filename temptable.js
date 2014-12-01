@@ -31,6 +31,9 @@ function createTemperatureLookup(arg,hash){
     adcs=new Array();
     for(var i=1;i<max_adc;i+=increment)
         adcs.push(i);
+
+    adcs.push(max_adc);
+
     first=1;
 
     url=window.location.toString().substring(0,window.location.toString().length-window.location.hash.length)+(hash?('#'+hash):'');
